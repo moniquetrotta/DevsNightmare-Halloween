@@ -1,4 +1,4 @@
-const BASE_URL = 'https://devsnightmare-halloween.netlify.app/assets/img';
+const BASE_URL = 'https://devsnightmare-halloween.netlify.app/api/imagem';
 const imgBtn = document.getElementById('change-img');
 
 const getImg = async () => {
