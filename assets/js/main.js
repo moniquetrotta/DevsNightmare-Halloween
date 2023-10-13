@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3000/assets/img';
+const BASE_URL = 'http://localhost:3000/api/imagem';
 const imgBtn = document.getElementById('change-img');
 
 const getImg = async () => {
