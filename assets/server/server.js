@@ -7,14 +7,14 @@ const app = express();
 // Crie uma rota para obter uma imagem aleatória
 app.get('/api/imagem', (req, res) => {
   // Crie uma lista de imagens
-  const imagens = fs.readdirSync(__dirname + '/imagens');
+  const imagens = fs.readdirSync(__dirname + '/assets/img');
 
   // Selecione uma imagem aleatória
   const imagem = imagens[Math.floor(Math.random() * imagens.length)];
 
   // Retorne a imagem
   res.json({
-    imagem: `/imagens/${imagem}`,
+    imagem: `/assets/img/${imagem}`,
   });
 });
 
